@@ -1,19 +1,3 @@
-window.addEventListener("DOMContentLoaded", () => {
-    const saludoDiv = document.querySelector(".saludo");
-    saludoDiv.classList.add("activo");
-    const btnCerrar = document.querySelector(".cerrar")
-
-    const saludo = document.getElementById("saludo");
-    const hora = new Date().getHours();
-    if (hora < 12) saludo.textContent = "Buenos días, Hola, soy Juan. Este portafolio es una muestra de mi crecimiento, pasión y compromiso con la tecnología.";
-    else if (hora < 18) saludo.textContent = "Buenas tardes, Hola, soy Juan. Este portafolio es una muestra de mi crecimiento, pasión y compromiso con la tecnología.";
-    else saludo.textContent = "Buenas noches. Hola, soy Juan. Este portafolio es una muestra de mi crecimiento, pasión y compromiso con la tecnología.";
-
-    btnCerrar.addEventListener("click", () => {
-        saludoDiv.classList.remove("activo");
-        saludoDiv.classList.add("cerrar-animacion");
-    });
-});
 document.addEventListener('DOMContentLoaded', function() {
     particlesJS('particles-js', {
         "particles": {
