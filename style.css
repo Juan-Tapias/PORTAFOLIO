@@ -25,50 +25,6 @@ body {
     display: flex;
     justify-content: center;
 }
-.cerrar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 1px solid #7b2cbf;
-    background: transparent;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    line-height: 35px;
-    text-align: center;
-    overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
-    transition: all 0.2s ease-in;
-}
-
-.cerrar:hover {
-    background: #6a1fb3;
-    box-shadow: 0 0 30px 5px #6a1fb3;
-    transition: all 0.2s ease-out;
-}
-
-.cerrar:hover::before {
-    animation: sh02 0.5s 0s linear;
-}
-
-.cerrar::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    transform: skewX(-20deg);
-}
-
 @keyframes sh02 {
     from {
         opacity: 0;
@@ -98,16 +54,6 @@ header {
 .inicio{
     width: 100%;
     height: 30vw;
-}
-@media (max-width: 1500px){
-    .saludar{
-        margin-top: -28vw;
-        text-align: center;
-    }
-    .saludo{
-        width: 23vw;
-        height: 16vw;
-    }
 }
 .foto-container{
     display: flex;
@@ -155,7 +101,8 @@ header {
     font-size: 0.9vw;
     cursor: pointer;
 }
-.contacto button:hover, .hoja-vida button:hover{
+.contacto a:hover button,
+.hoja-vida a:hover button {
     background-color: #bc6bff;
 }
 .sobre-mi{
@@ -233,7 +180,7 @@ header {
 }
 
 .container-skills {
-    margin-top: 1vw;
+  margin-top: 1vw;
   padding-left: 2vw;
   display: flex;
   align-items: flex-start;
