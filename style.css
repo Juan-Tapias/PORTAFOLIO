@@ -21,23 +21,6 @@ body {
     box-shadow: 0 0 40px 2px #8040bd;    
     border-radius: 50%;
   }
-.saludar{
-    display: flex;
-    justify-content: center;
-}
-@keyframes sh02 {
-    from {
-        opacity: 0;
-        left: 0%;
-    }
-    50% {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        left: 100%;
-    }
-}
 header {
     color: white;
     display: flex;
@@ -74,7 +57,7 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     margin-top: -2vw;
 }
 .container-cont{
@@ -82,6 +65,7 @@ header {
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+    margin-top: 1vw;
 }
 
 .contacto, .hoja-vida{
@@ -91,14 +75,13 @@ header {
 .contacto button, .hoja-vida button{
     border: 1px solid #6a1fb3;
     border-radius: 50px;
-    width: 6.5vw;
-    max-width: 8vw;
-    height: 2.5vw;
+    width: 12vw;
+    height: 3vw;
     text-align: center;
     background-color: transparent;
     text-decoration: none;
     color: white;
-    font-size: 0.9vw;
+    font-size: 1vw;
     cursor: pointer;
 }
 .contacto a:hover button,
@@ -110,44 +93,23 @@ header {
     justify-content: center;
 }
 .organizador{
-    display: grid;
-    grid-template-columns: repeat(2,50%);
-    grid-template-areas: "s1 s1"
-                         "s2 s3";
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 10vw;
+    margin-top: 3.2vw;
 }
-.tarjeta-sobre-mi {
+.tarjeta-sobre-mi, .tarjeta-sobre-mi2, .tarjeta-sobre-mi3 {
     margin-top: 4vw;
     gap: 20px;
     padding: 20px;
-    max-width: 700px;
+    max-width: 420px;
+    aspect-ratio: 1.618 / 1;
     border-radius: 12px;
     box-shadow: 0 4px 10px #d4b7f0;
-    grid-area: s1;
+
     text-align: center;
   }
-.tarjeta-sobre-mi2{
-    margin-top: 2vw;
-    gap: 20px;
-    padding: 20px;
-    max-width: 550px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px #d4b7f0;
-    grid-area: s2;
-    text-align: center;
-}
-.tarjeta-sobre-mi3{
-    margin-top: 2vw;
-    gap: 20px;
-    padding: 20px;
-    max-width: 550px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px #d4b7f0;
-    grid-area: s3;
-    margin-left: 2vw;
-    text-align: center;
-}
 .tarjeta-sobre-mi,
 .tarjeta-sobre-mi2,
 .tarjeta-sobre-mi3 {
@@ -207,8 +169,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 12vw;
-  height: 8vw;
+    width: 12vw;
+    height: 7.42vw;
   font-size: 1vw;
   border-radius: 12px;
   box-shadow: 0 4px 10px #f7f7f7;
